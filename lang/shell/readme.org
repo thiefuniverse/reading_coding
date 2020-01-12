@@ -1,0 +1,15 @@
+#+TITLE:   shell coding
+#+DATE:    January 13, 2020
+#+SINCE:   {replace with next tagged release version}
+#+STARTUP: inlineimages
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+- [[#projects][Projects]]
+  - [[#add-a-userful-makefile-for-c][add a userful makefile for C++.]]
+
+* Description
+coding shell.
+
+* Projects
+** add a userful makefile for C++.
