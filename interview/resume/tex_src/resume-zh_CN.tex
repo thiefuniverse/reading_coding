@@ -1,0 +1,111 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{color,soul}
+\sethlcolor{pink}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{谢非}
+\basicInfo{
+  \faStar\
+  {男}
+  {22} \textperiodcentered\ 
+ \textbf{ \email {flythief@outlook.com}} \textperiodcentered\ 
+  \phone{(+86) 130 5132 4828} 
+%  \linkedin[]{https://www.linkedin.com/in/billryan8}
+%  \faGithub\{https://github.com/thiefuniverse}
+}
+
+\section{\faGithub\ github}
+\begin{itemize}[parsep=0.5ex]
+  \item 技术博客: \href{https://thiefuniverse.github.io} {\textbf{https://thiefuniverse.github.io}}
+  \item GitHub: \href{https://github.com/thiefuniverse}{ \textbf{https://github.com/thiefuniverse}}
+  \end{itemize}
+  
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{北京邮电大学}, 北京}{2014 -- 至今}
+\textit{在读大三学生}\ 计算机科学与技术专业, 预计 2018 年 6 月毕业
+
+
+\section{\faCogs\ 技能清单}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言:  C++ > C == Python == Elisp
+  \item 开发: 熟悉linux环境,了解常用设计模式和网络及数据库(MySQL,redis)编程知识
+  \item 算法及数据结构: 熟悉常用的数据结构和算法(如动态规划,贪婪等)
+  \item 语言: 英语 - 熟练(英语过六级,可熟练阅读外文技术书籍和浏览英文网页)
+\end{itemize}
+
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{开发的实用库}}{2016年11月 -- 至今}
+\role{\faStar\ \hl{\mbox{Blog-Minimal, Elisp}}}{个人项目}
+\begin{onehalfspacing}
+\ \ \ \ Emacs基于org-mode的静态博客生成器  \href{https://github.com/thiefuniverse/blog-minimal} {\textbf{https://github.com/thiefuniverse/blog-minimal}}
+\begin{itemize}
+  \item 使用mustache模板系统，明确拆分blog的各个部分,便于重组生成整体blog
+  \item 力图做到用户简单配置后即可轻松部署,网页全体变量可配置
+\end{itemize}
+\end{onehalfspacing}
+
+\role{\faStar\ \hl{\mbox{MYSQL-ORM, C++}}}{个人项目}
+\begin{onehalfspacing}
+  \ \ \ \ C++的ORM(Object Relation Mapping) $\href{https://github.com/thiefuniverse/ORM_MYSQL}{\textbf{https://github.com/thiefuniverse/ORM$\_$MYSQL}$}
+  
+\begin{itemize}
+  \item 使用了C++11风格代码以及模板元编程技术
+  \item 通过封装接口即可实现类数据修改与数据库数据的修改
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{学校作业项目}}{2016年4月 -- 2016年11月}
+ \role{\faStar\ \hl{\mbox{旅客信息管理系统,C++}}}{协作项目}
+\begin{onehalfspacing}
+\ \ \ \ 负责旅客路线算法设计,与数据库(MYSQL)结构设计以及socket数据传输$\href{https://github.com/thiefuniverse/travel_plan}{\textbf{(Link)}$} 
+\end{onehalfspacing}
+
+\role{\faStar\ \hl{\mbox{宠物小精灵对战系统,C++}}}{协作项目}
+\begin{onehalfspacing}
+\ \ \ \ 使用Qt实现,主要负责用户的登录注册,数据库(MYSQL)结构设计(数据库操作使用了个人项目开发库MYSQL-ORM)以及精灵对战时的socket数据传输.$\href{https://github.com/thiefuniverse/pokemons}{\textbf{(Link)}$}
+\end{onehalfspacing}
+
+\role{\faStar\ \hl{\mbox{自然语言处理相关, Python}}}{个人项目}
+\begin{onehalfspacing}
+\ \ \ \ 分词，文本识别，文本分类 \href{https://github.com/thiefuniverse/BUPT_Coding/tree/master/NLP} {\textbf{(Link)}}
+\end{onehalfspacing}
+
+\role{\faStar\ \hl{\mbox{编译原理相关, Python}}}{个人项目}
+\begin{onehalfspacing}
+ \ \ \ \ C语言子集词法分析器实现,LL和SLR语法分析器实现\href{https://github.com/thiefuniverse/LL_grammer} {\textbf{(Link)}}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+
+\section{\faHeartO\ 获奖情况}
+\datedline{大一时获国家励志奖学金}{2015 年11 月}
+\datedline{大二时获三等奖学金}{2016 年11 月}
+
+% \section{\faHeartO\ 其他}
+% \role{\mbox{热爱生活,富有激情,喜欢运动(天天跑步)}}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

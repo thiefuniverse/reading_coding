@@ -1,0 +1,51 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Arch Linux) (preloaded format=xelatex 2017.3.13)  13 MAR 2017 23:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\input xifthen.sty
+(./xifthen.sty
+
+LaTeX Warning: You have requested package `',
+               but the package provides `xifthen'.
+
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count81
+\calc@Cskip=\skip43
+)
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+
+! LaTeX Error: File `ifmtarg.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.12 ^^M
+        
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 138 strings out of 493589
+ 1722 string characters out of 6148800
+ 53785 words of memory out of 5000000
+ 3640 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1347 hyphenation exceptions out of 8191
+ 14i,0n,16p,125b,10s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
