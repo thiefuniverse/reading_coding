@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindMyLocation6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-E2-Aci">
+                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-zZ-6jL">
+                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hMx-cw-jPT">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="1092"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Find my location" translatesAutoresizingMaskIntoConstraints="NO" id="lv9-eu-FOj">
+                                            <rect key="frame" x="67" y="959" width="700" height="78"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZj-9B-rS8">
+                                            <rect key="frame" x="67" y="971" width="700" height="54"/>
+                                            <state key="normal" title="Find my location"/>
+                                            <connections>
+                                                <action selector="findLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QI-GQ-iLG"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find My Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2r-fq-DSO">
+                                            <rect key="frame" x="157" y="82" width="520" height="252"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="520" id="6i2-bv-5ou"/>
+                                                <constraint firstAttribute="height" constant="252" id="XYf-vK-h7u"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="kZj-9B-rS8" secondAttribute="bottom" constant="67" id="4bZ-zE-fdx"/>
+                                        <constraint firstItem="l2r-fq-DSO" firstAttribute="top" secondItem="hMx-cw-jPT" secondAttribute="top" constant="82" id="JWo-2D-hG5"/>
+                                        <constraint firstItem="l2r-fq-DSO" firstAttribute="centerX" secondItem="hMx-cw-jPT" secondAttribute="centerX" id="OaN-C1-eof"/>
+                                        <constraint firstItem="lv9-eu-FOj" firstAttribute="trailing" secondItem="kZj-9B-rS8" secondAttribute="trailing" id="UrX-0w-qCW"/>
+                                        <constraint firstItem="lv9-eu-FOj" firstAttribute="leading" secondItem="kZj-9B-rS8" secondAttribute="leading" id="hz6-O3-fu5"/>
+                                        <constraint firstItem="lv9-eu-FOj" firstAttribute="leading" secondItem="hMx-cw-jPT" secondAttribute="leading" constant="67" id="lZB-zA-qxP"/>
+                                        <constraint firstItem="lv9-eu-FOj" firstAttribute="centerY" secondItem="kZj-9B-rS8" secondAttribute="centerY" id="mye-L0-78l"/>
+                                        <constraint firstAttribute="bottom" secondItem="lv9-eu-FOj" secondAttribute="bottom" constant="55" id="viO-FX-FrP"/>
+                                        <constraint firstItem="l2r-fq-DSO" firstAttribute="centerX" secondItem="kZj-9B-rS8" secondAttribute="centerX" id="w4O-bz-hun"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lZ7-E2-Aci" firstAttribute="leading" secondItem="pVN-zZ-6jL" secondAttribute="leading" id="8MW-hp-PKA"/>
+                            <constraint firstItem="pVN-zZ-6jL" firstAttribute="top" secondItem="lZ7-E2-Aci" secondAttribute="top" id="Gbd-fE-rLR"/>
+                            <constraint firstItem="lZ7-E2-Aci" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q7W-xC-lC9"/>
+                            <constraint firstItem="pVN-zZ-6jL" firstAttribute="trailing" secondItem="lZ7-E2-Aci" secondAttribute="trailing" id="RTa-g7-FZR"/>
+                            <constraint firstItem="pVN-zZ-6jL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bAc-vt-fWP"/>
+                            <constraint firstItem="pVN-zZ-6jL" firstAttribute="bottom" secondItem="lZ7-E2-Aci" secondAttribute="bottom" id="bFc-n7-he5"/>
+                            <constraint firstAttribute="trailing" secondItem="pVN-zZ-6jL" secondAttribute="trailing" id="blp-OV-1AB"/>
+                            <constraint firstItem="lZ7-E2-Aci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uGb-kL-MNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="findMyLocationAct" destination="kZj-9B-rS8" id="9HX-39-Ict"/>
+                        <outlet property="showLocation" destination="l2r-fq-DSO" id="Obn-tO-r4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.26618705035972" y="118.16546762589928"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Find my location" width="326" height="78"/>
+        <image name="bg" width="375" height="667"/>
+    </resources>
+</document>

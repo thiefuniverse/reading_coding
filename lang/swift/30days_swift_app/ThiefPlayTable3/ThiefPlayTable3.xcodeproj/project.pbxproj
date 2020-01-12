@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D48621BD1FA4760A002234BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48621BC1FA4760A002234BF /* AppDelegate.swift */; };
+		D48621BF1FA4760A002234BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48621BE1FA4760A002234BF /* ViewController.swift */; };
+		D48621C21FA4760A002234BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48621C01FA4760A002234BF /* Main.storyboard */; };
+		D48621C71FA4760A002234BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48621C51FA4760A002234BF /* LaunchScreen.storyboard */; };
+		D48621D21FA4760A002234BF /* ThiefPlayTable3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48621D11FA4760A002234BF /* ThiefPlayTable3Tests.swift */; };
+		D48621DD1FA4760A002234BF /* ThiefPlayTable3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48621DC1FA4760A002234BF /* ThiefPlayTable3UITests.swift */; };
+		D48621EB1FA47908002234BF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48621EA1FA47908002234BF /* VideoCell.swift */; };
+		D48621ED1FA47AB6002234BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48621EC1FA47AB6002234BF /* Assets.xcassets */; };
+		D48621EF1FA47F47002234BF /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D48621EE1FA47F3A002234BF /* emoji zone.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D48621CE1FA4760A002234BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48621B11FA4760A002234BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48621B81FA4760A002234BF;
+			remoteInfo = ThiefPlayTable3;
+		};
+		D48621D91FA4760A002234BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48621B11FA4760A002234BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48621B81FA4760A002234BF;
+			remoteInfo = ThiefPlayTable3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D48621B91FA4760A002234BF /* ThiefPlayTable3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThiefPlayTable3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48621BC1FA4760A002234BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D48621BE1FA4760A002234BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D48621C11FA4760A002234BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D48621C61FA4760A002234BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D48621C81FA4760A002234BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48621CD1FA4760A002234BF /* ThiefPlayTable3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThiefPlayTable3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48621D11FA4760A002234BF /* ThiefPlayTable3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThiefPlayTable3Tests.swift; sourceTree = "<group>"; };
+		D48621D31FA4760A002234BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48621D81FA4760A002234BF /* ThiefPlayTable3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThiefPlayTable3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48621DC1FA4760A002234BF /* ThiefPlayTable3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThiefPlayTable3UITests.swift; sourceTree = "<group>"; };
+		D48621DE1FA4760A002234BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48621EA1FA47908002234BF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		D48621EC1FA47AB6002234BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/30DaysofSwift-master/Project 03 - PlayLocalVideo/PlayLocalVideo/Assets.xcassets"; sourceTree = "<group>"; };
+		D48621EE1FA47F3A002234BF /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "emoji zone.mp4"; path = "../../../../../Downloads/30DaysofSwift-master/Project 03 - PlayLocalVideo/PlayLocalVideo/emoji zone.mp4"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D48621B61FA4760A002234BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48621CA1FA4760A002234BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48621D51FA4760A002234BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D48621B01FA4760A002234BF = {
+			isa = PBXGroup;
+			children = (
+				D48621BB1FA4760A002234BF /* ThiefPlayTable3 */,
+				D48621D01FA4760A002234BF /* ThiefPlayTable3Tests */,
+				D48621DB1FA4760A002234BF /* ThiefPlayTable3UITests */,
+				D48621BA1FA4760A002234BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D48621BA1FA4760A002234BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D48621B91FA4760A002234BF /* ThiefPlayTable3.app */,
+				D48621CD1FA4760A002234BF /* ThiefPlayTable3Tests.xctest */,
+				D48621D81FA4760A002234BF /* ThiefPlayTable3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D48621BB1FA4760A002234BF /* ThiefPlayTable3 */ = {
+			isa = PBXGroup;
+			children = (
+				D48621BC1FA4760A002234BF /* AppDelegate.swift */,
+				D48621BE1FA4760A002234BF /* ViewController.swift */,
+				D48621C01FA4760A002234BF /* Main.storyboard */,
+				D48621EA1FA47908002234BF /* VideoCell.swift */,
+				D48621EC1FA47AB6002234BF /* Assets.xcassets */,
+				D48621C51FA4760A002234BF /* LaunchScreen.storyboard */,
+				D48621EE1FA47F3A002234BF /* emoji zone.mp4 */,
+				D48621C81FA4760A002234BF /* Info.plist */,
+			);
+			path = ThiefPlayTable3;
+			sourceTree = "<group>";
+		};
+		D48621D01FA4760A002234BF /* ThiefPlayTable3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D48621D11FA4760A002234BF /* ThiefPlayTable3Tests.swift */,
+				D48621D31FA4760A002234BF /* Info.plist */,
+			);
+			path = ThiefPlayTable3Tests;
+			sourceTree = "<group>";
+		};
+		D48621DB1FA4760A002234BF /* ThiefPlayTable3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D48621DC1FA4760A002234BF /* ThiefPlayTable3UITests.swift */,
+				D48621DE1FA4760A002234BF /* Info.plist */,
+			);
+			path = ThiefPlayTable3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D48621B81FA4760A002234BF /* ThiefPlayTable3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48621E11FA4760A002234BF /* Build configuration list for PBXNativeTarget "ThiefPlayTable3" */;
+			buildPhases = (
+				D48621B51FA4760A002234BF /* Sources */,
+				D48621B61FA4760A002234BF /* Frameworks */,
+				D48621B71FA4760A002234BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThiefPlayTable3;
+			productName = ThiefPlayTable3;
+			productReference = D48621B91FA4760A002234BF /* ThiefPlayTable3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D48621CC1FA4760A002234BF /* ThiefPlayTable3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48621E41FA4760A002234BF /* Build configuration list for PBXNativeTarget "ThiefPlayTable3Tests" */;
+			buildPhases = (
+				D48621C91FA4760A002234BF /* Sources */,
+				D48621CA1FA4760A002234BF /* Frameworks */,
+				D48621CB1FA4760A002234BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48621CF1FA4760A002234BF /* PBXTargetDependency */,
+			);
+			name = ThiefPlayTable3Tests;
+			productName = ThiefPlayTable3Tests;
+			productReference = D48621CD1FA4760A002234BF /* ThiefPlayTable3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D48621D71FA4760A002234BF /* ThiefPlayTable3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48621E71FA4760A002234BF /* Build configuration list for PBXNativeTarget "ThiefPlayTable3UITests" */;
+			buildPhases = (
+				D48621D41FA4760A002234BF /* Sources */,
+				D48621D51FA4760A002234BF /* Frameworks */,
+				D48621D61FA4760A002234BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48621DA1FA4760A002234BF /* PBXTargetDependency */,
+			);
+			name = ThiefPlayTable3UITests;
+			productName = ThiefPlayTable3UITests;
+			productReference = D48621D81FA4760A002234BF /* ThiefPlayTable3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D48621B11FA4760A002234BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "谢非";
+				TargetAttributes = {
+					D48621B81FA4760A002234BF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					D48621CC1FA4760A002234BF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D48621B81FA4760A002234BF;
+					};
+					D48621D71FA4760A002234BF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D48621B81FA4760A002234BF;
+					};
+				};
+			};
+			buildConfigurationList = D48621B41FA4760A002234BF /* Build configuration list for PBXProject "ThiefPlayTable3" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D48621B01FA4760A002234BF;
+			productRefGroup = D48621BA1FA4760A002234BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D48621B81FA4760A002234BF /* ThiefPlayTable3 */,
+				D48621CC1FA4760A002234BF /* ThiefPlayTable3Tests */,
+				D48621D71FA4760A002234BF /* ThiefPlayTable3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D48621B71FA4760A002234BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48621C71FA4760A002234BF /* LaunchScreen.storyboard in Resources */,
+				D48621EF1FA47F47002234BF /* emoji zone.mp4 in Resources */,
+				D48621ED1FA47AB6002234BF /* Assets.xcassets in Resources */,
+				D48621C21FA4760A002234BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48621CB1FA4760A002234BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48621D61FA4760A002234BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D48621B51FA4760A002234BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48621BF1FA4760A002234BF /* ViewController.swift in Sources */,
+				D48621BD1FA4760A002234BF /* AppDelegate.swift in Sources */,
+				D48621EB1FA47908002234BF /* VideoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48621C91FA4760A002234BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48621D21FA4760A002234BF /* ThiefPlayTable3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48621D41FA4760A002234BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48621DD1FA4760A002234BF /* ThiefPlayTable3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D48621CF1FA4760A002234BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48621B81FA4760A002234BF /* ThiefPlayTable3 */;
+			targetProxy = D48621CE1FA4760A002234BF /* PBXContainerItemProxy */;
+		};
+		D48621DA1FA4760A002234BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48621B81FA4760A002234BF /* ThiefPlayTable3 */;
+			targetProxy = D48621D91FA4760A002234BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D48621C01FA4760A002234BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48621C11FA4760A002234BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D48621C51FA4760A002234BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48621C61FA4760A002234BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D48621DF1FA4760A002234BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D48621E01FA4760A002234BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D48621E21FA4760A002234BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB8LCYX4W7;
+				INFOPLIST_FILE = ThiefPlayTable3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.fullstack.FlappyBird.thief;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(PROJECT_DIR)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D48621E31FA4760A002234BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB8LCYX4W7;
+				INFOPLIST_FILE = ThiefPlayTable3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.fullstack.FlappyBird.thief;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(PROJECT_DIR)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D48621E51FA4760A002234BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB8LCYX4W7;
+				INFOPLIST_FILE = ThiefPlayTable3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thiefuniverse.flythief.ThiefPlayTable3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThiefPlayTable3.app/ThiefPlayTable3";
+			};
+			name = Debug;
+		};
+		D48621E61FA4760A002234BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB8LCYX4W7;
+				INFOPLIST_FILE = ThiefPlayTable3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thiefuniverse.flythief.ThiefPlayTable3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThiefPlayTable3.app/ThiefPlayTable3";
+			};
+			name = Release;
+		};
+		D48621E81FA4760A002234BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB8LCYX4W7;
+				INFOPLIST_FILE = ThiefPlayTable3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thiefuniverse.flythief.ThiefPlayTable3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThiefPlayTable3;
+			};
+			name = Debug;
+		};
+		D48621E91FA4760A002234BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB8LCYX4W7;
+				INFOPLIST_FILE = ThiefPlayTable3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thiefuniverse.flythief.ThiefPlayTable3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThiefPlayTable3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D48621B41FA4760A002234BF /* Build configuration list for PBXProject "ThiefPlayTable3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48621DF1FA4760A002234BF /* Debug */,
+				D48621E01FA4760A002234BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48621E11FA4760A002234BF /* Build configuration list for PBXNativeTarget "ThiefPlayTable3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48621E21FA4760A002234BF /* Debug */,
+				D48621E31FA4760A002234BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48621E41FA4760A002234BF /* Build configuration list for PBXNativeTarget "ThiefPlayTable3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48621E51FA4760A002234BF /* Debug */,
+				D48621E61FA4760A002234BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48621E71FA4760A002234BF /* Build configuration list for PBXNativeTarget "ThiefPlayTable3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48621E81FA4760A002234BF /* Debug */,
+				D48621E91FA4760A002234BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D48621B11FA4760A002234BF /* Project object */;
+}

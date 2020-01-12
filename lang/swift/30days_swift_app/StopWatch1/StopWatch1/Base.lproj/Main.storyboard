@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StopWatch1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Upa-CC-69H" userLabel="bigStack">
+                                <rect key="frame" x="0.0" y="56" width="414" height="680"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN5-dD-zZE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="453.33333333333331"/>
+                                        <color key="backgroundColor" red="0.7442842444808091" green="1" blue="0.76923308466902796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" red="0.14674410673517879" green="0.45005017219696752" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="MZX-rz-eRd" userLabel="small Stack">
+                                        <rect key="frame" x="0.0" y="453.33333333333331" width="414" height="226.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-fM-hfP">
+                                                <rect key="frame" x="0.0" y="0.0" width="210.33333333333334" height="226.66666666666666"/>
+                                                <color key="backgroundColor" red="0.84712389224784457" green="1" blue="0.94913120737056578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="start"/>
+                                                <connections>
+                                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXN-NO-kts"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owk-UK-yOt">
+                                                <rect key="frame" x="210.33333333333337" y="0.0" width="203.66666666666663" height="226.66666666666666"/>
+                                                <color key="backgroundColor" red="0.97933987674975342" green="1" blue="0.7405441815445033" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="stop"/>
+                                                <connections>
+                                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrt-50-knN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ga-1z-CKY">
+                                <rect key="frame" x="326" y="13" width="68" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Ga-1z-CKY" secondAttribute="height" multiplier="34:19" id="7Fn-Vv-Hr5"/>
+                                    <constraint firstAttribute="height" constant="38" id="Ndp-90-lFp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAy-Hb-maT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79499731988729228" green="0.90705965032667457" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7Ga-1z-CKY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="13" id="3CE-E7-Rxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Upa-CC-69H" secondAttribute="trailing" id="TbM-MK-bzG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Upa-CC-69H" secondAttribute="bottom" id="V8H-dF-A7e"/>
+                            <constraint firstItem="Upa-CC-69H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eEJ-74-Vvm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ga-1z-CKY" secondAttribute="trailing" constant="20" id="gEI-K8-X3T"/>
+                            <constraint firstItem="Upa-CC-69H" firstAttribute="top" secondItem="7Ga-1z-CKY" secondAttribute="bottom" constant="5" id="smN-gD-p8T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="showSecond" destination="uN5-dD-zZE" id="up4-Ug-rgg"/>
+                        <outlet property="startButton" destination="9iw-fM-hfP" id="eJq-oq-Lmx"/>
+                        <outlet property="stopButton" destination="Owk-UK-yOt" id="Cgm-y9-frW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="31.793478260869566"/>
+        </scene>
+    </scenes>
+</document>
