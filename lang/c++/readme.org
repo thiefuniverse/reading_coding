@@ -1,0 +1,15 @@
+#+TITLE:   C++ coding
+#+DATE:    January 12, 2020
+#+SINCE:   {replace with next tagged release version}
+#+STARTUP: inlineimages
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+- [[#projects][Projects]]
+  - [[#range_iterator-implementation_][range_iterator implementation_]]
+
+* Description
+projects or some practices for C++.
+
+* Projects
+** range_iterator implementation_
