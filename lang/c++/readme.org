@@ -15,3 +15,4 @@ projects or some practices for C++.
 ** range_iterator implementation
 ** hana: template for C++.
 ** flyconfig: a simple config file lib.
+** opencv
