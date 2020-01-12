@@ -13,4 +13,5 @@ projects or some practices for C++.
 
 * Projects
 ** range_iterator implementation
-** hana
+** hana: template for C++.
+** flyconfig: a simple config file lib.
