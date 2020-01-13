@@ -1,0 +1,34 @@
+* base_lib learning
+** introduction
+This is a repo for base lib of chromium learning. (commit id is e7d2671aaa).
+This repo only works for mac os. (because I only build base_lib in mac. :)
+
+** usage:
+*** dir structure
+**** base: base source code from chromium
+**** base_lib: base dynamic lib builded in mac os 10.14.1.
+**** src/main: gtest main src.
+**** src/unit: unit test file. *you can add test file in this directory.*
+**** run_it:  shell script for manage (dep,build,clean) this project.
+
+*** compile it
+clone this repo and run script "run_it", you can have some command to manage this repo.
+
+**** Usage:
+run_it <command>
+
+<command>:
+
+"dep" : you will download gtest 1.8.1 and compile it because gtest is a important dep for this repo.
+
+
+"build"/"rebuild": build your code.
+
+
+"run": run your code.
+
+"clean": clean your build.
+
+** some notes:
+Current executable program name is "*test*", you can modify it by yourself. Just spare several minutes to hack "run_it" script and then you will know how to modify it clearly.
+

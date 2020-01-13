@@ -16,3 +16,4 @@ projects or some practices for C++.
 ** hana: template for C++.
 ** flyconfig: a simple config file lib.
 ** opencv
+** base lib from chromium

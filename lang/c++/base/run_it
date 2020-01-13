@@ -1,0 +1,81 @@
+#!/bin/bash
+
+script_name=`basename "$0"`
+help() {
+    echo "================================"
+    echo "Usage:"
+    echo "${script_name} <command>"
+    echo "<command>:"
+    echo -e "\t dep \t\t get gtest lib."
+    echo -e "\t build \t\t build your code."
+    echo -e "\t rebuild \t clean and rebuild."
+    echo -e "\t run \t\t run your code."
+    echo -e "\t clean \t\t only clean your build."
+    echo "================================"
+}
+
+rebuild_it() {
+    rm -rf build
+    echo "clean done."
+    mkdir build
+    cd build
+    cmake ..
+    make
+}
+
+root_dir=$(pwd)
+if [ "$1" = "dep" ]; then
+    if [ ! -d "$root_dir/deps/gtest" ]; then
+        mkdir test
+        cd test
+
+        # download gtest release
+        wget https://github.com/google/googletest/archive/release-1.8.1.zip 
+        unzip *.zip
+        rm *.zip
+
+        # make and install gtest
+        mv google* gtest
+        cd gtest
+        mkdir build
+        cd build
+
+        # compile and install gtest lib
+        gtest_install_dir=$root_dir/deps/gtest
+        mkdir -p $gtest_install_dir
+        cmake -DCMAKE_INSTALL_PREFIX:PATH=$gtest_install_dir ..
+        make
+        make install
+
+        # remove gtest src
+        if [ $? -eq 0 ]; then
+            rm -r test 
+        fi
+
+    fi
+    echo "dep done."
+elif [ "$1" = "rebuild" ]; then
+    rebuild_it
+    # copy run program to root_dir
+    rm -rf $root_dir/test
+    cp ./test $root_dir
+elif [ "$1" = "build" ]; then
+    if [ ! -d "$root_dir/build" ]; then
+        rebuild_it
+    else
+        cd build
+        make
+    fi
+    cp ./test $root_dir
+elif [ "$1" = "run" ]; then
+    ./test
+    if [ ! $? = 0 ]; then
+        echo "you need to build it."
+    fi
+elif [ "$1" = "clean" ]; then
+    rm -rf build
+    echo "clean done."
+else
+    echo "you missed some args or used wrong args."
+    help
+fi
