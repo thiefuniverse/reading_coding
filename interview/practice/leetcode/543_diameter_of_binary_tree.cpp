@@ -111,9 +111,52 @@ int diameterOfBinaryTree3_Helper(TreeNode *root, int &max_result) {
 }
 
 int diameterOfBinaryTree3(TreeNode *root) {
-    map< TreeNode *, int > depth_record;
     int max_result = 0;
     diameterOfBinaryTree3_Helper(root, max_result);
+    return max_result;
+}
+
+//version 4: iteration
+int diameterOfBinaryTree4(TreeNode *root) {
+    if (!root) {
+        return 0;
+    }
+    int max_result = 0;
+    stack< TreeNode * > s;
+    map< TreeNode *, pair< int, int > > record;
+    record[nullptr] = make_pair(0, 0);
+    TreeNode *pre = nullptr;
+    s.push(root);
+    // get depth of each node
+    // 中序遍历二叉树,并记录深度左右分叉和的最大值
+    while (!s.empty()) {
+        auto t = s.top();
+        if (t->left == nullptr && t->right == nullptr) {
+            pre = t;
+            record[t] = make_pair(0, 0);
+            s.pop();
+        } else if (pre && pre == t->left) {
+            // access it
+            record[t].first = 1 + max(record[pre].first, record[pre].second);
+            max_result = max(record[t].first, max_result);
+            pre = t;
+            s.pop();
+        } else if (pre && pre == t->right) {
+            // access it
+            if (t->left) {
+                record[t].first = 1 + max(record[t->left].first, record[t->left].second);
+            } else {
+                record[t].first = 0;
+            }
+            record[t].second = 1 + max(record[pre].first, record[pre].second);
+            max_result = max(record[t].first + record[t].second, max_result);
+            pre = t;
+            s.pop();
+        } else {
+            if (t->right) s.push(t->right);
+            if (t->left) s.push(t->left);
+        }
+    }
     return max_result;
 }
 
@@ -134,5 +177,6 @@ int main() {
 
     std::cout << diameterOfBinaryTree2(&t1) << std::endl;
     std::cout << diameterOfBinaryTree3(&t1) << std::endl;
+    std::cout << diameterOfBinaryTree4(&t1) << std::endl;
     return 0;
 }
