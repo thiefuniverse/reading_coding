@@ -41,6 +41,10 @@ struct getTwo {
     }
 };
 
+int getRef(int a, NumGenerator &b) {
+    return a + b.getNum();
+}
+
 class getNumber {
 public:
     int getThree(int a) {
@@ -58,12 +62,12 @@ class Function;
 template < typename Ret, typename... Args >
 class Function< Ret(Args...) > {
     // 不借助多态来存储各种类型的可调用对象，使用如下三个函数指针来调用.
-    Ret (*call_func)(Function *, Args &...);
+    Ret (*call_func)(Function *, Args &&...);
     void *(*copy_func)(const Function &);
     void (*destruct_func)(const Function &);
 
     template < typename T >
-    static Ret call(Function *f, Args &... args) {
+    static Ret call(Function *f, Args &&... args) {
         T *call_obj = static_cast< T * >(f->any_callable);
         return (*call_obj)(std::forward< Args >(args)...);
     }
@@ -83,9 +87,8 @@ public:
     Function(T functor) : call_func(call< T >), copy_func(copy< T >), destruct_func(destruct< T >), any_callable(new T(functor)) {}
     Function() : any_callable(nullptr) {}
     // 实际调用存储的函数
-    template < typename... CallArgs >
-    Ret operator()(CallArgs &... args) {
-        return call_func(this, std::forward< CallArgs & >(args)...);
+    Ret operator()(Args... args) {
+        return call_func(this, std::forward< Args >(args)...);
     }
 
     Function(const Function &f) : call_func(f.call_func), copy_func(f.copy_func), destruct_func(f.destruct_func), any_callable(copy_func(f)) {}
@@ -103,42 +106,46 @@ public:
 };
 int main() {
     // basic function
-    // class Function< int(int) > getNumber(getOne);
-    // std::cout << getNumber(3) << std::endl;
+    class Function< int(int) > getNumber(getOne);
+    std::cout << getNumber(3) << std::endl;
 
+    NumGenerator gen(8);
     // class which override operator()
+    std::cout << "*** get number 2 start" << std::endl;
     class Function< int(int, NumGenerator) > getNumber2(getTwo{});
-    NumGenerator ge(8);
-    // std::cout << "forward before" << std::endl;
-    // std::function< int(int, NumGenerator) > getNumber2(getTwo{});
-    // std::cout << getNumber2(2, std::forward< NumGenerator >(ge)) << std::endl;
-    // NumGenerator ge(8);
-    // // std::cout << "forward before" << std::endl;
-    // std::cout << getNumber2(2, std::forward< NumGenerator >(ge)) << std::endl;
-    int m = 2;
-    std::cout << getNumber2(m, ge) << std::endl;
-    // return 0;
-    // std::cout << "forward after" << std::endl;
-    // std::cout << getNumber2(2, std::move(ge)) << std::endl;
-    // std::cout << "forward done" << std::endl;
-    // std::cout << getNumber2(2, ge) << std::endl;
-    return 0;
+    int num2 = 2;
+    std::cout << getNumber2(2, gen) << std::endl;
+    std::cout << "*** get number 2 end" << std::endl;
 
-    class Function< int(int, NumGenerator) > getNumber7 = getNumber2;
+    // compare with std::function
+    std::cout << "*** get number2 std::function start" << std::endl;
+    std::function< int(int, NumGenerator) > funGetNumber2(getTwo{});
+    std::cout << funGetNumber2(2, gen) << std::endl;
+    std::cout << "*** get number2 std::function end" << std::endl;
+
+    // function with reference
+    std::cout << "---get number 3 start" << std::endl;
+    class Function< int(int, NumGenerator &) > getNumber3(getRef);
+    std::cout << getNumber3(num2, gen) << std::endl;
+    std::cout << getNumber3(2, gen) << std::endl;
+    std::cout << "---get number 3 end" << std::endl;
+
+    // compare with std::function
+    std::cout << "---get number3 std::function start" << std::endl;
+    std::function< int(int, NumGenerator &) > funGetNumber3(getRef);
+    std::cout << funGetNumber3(2, gen) << std::endl;
+    std::cout << "---number3 std::function end" << std::endl;
 
     // non static member function
     class getNumber n;
-
-    Function< int(int) > getNumber3(std::bind(&getNumber::getThree, &n, 9));
+    Function< int(int) > getNumber4(std::bind(&getNumber::getThree, &n, 9));
 
     // static member function
-    Function< int(int) > getNumber6(&getNumber::getFour);
-    // std::cout << getNumber6(5) << std::endl;
+    Function< int(int) > getNumber5(&getNumber::getFour);
+    std::cout << getNumber5(5) << std::endl;
 
-    NumGenerator gen(8);
-    // std::cout << getNumber2(2, std::forward< NumGenerator >(gen)) << std::endl;
-    // std::cout << getNumber2(2, std::move(gen)) << std::endl;
-    //    std::cout << getNumber2(2, gen) << std::endl;
-
+    // lambda
+    Function< int(int) > getNumber6 = [](int one) -> int { return 5 + one; };
+    std::cout << getNumber6(5) << std::endl;
     return 0;
 }
