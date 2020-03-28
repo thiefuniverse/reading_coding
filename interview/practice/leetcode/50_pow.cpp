@@ -62,7 +62,7 @@ double myPow3(double x, int n) {
         nl = -nl;
     }
     double current_product = onex;
-    for (int i = nl; i; i /= 2) {
+    for (long i = nl; i; i /= 2) {
         if (i % 2 == 1) {
             result *= current_product;
         }
