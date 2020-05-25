@@ -37,20 +37,20 @@ class Function< Ret(Args0) > {
     struct callable_base *base;
 
     template < typename T >
-    struct callable_dervied : public callable_base {
+    struct callable_derived : public callable_base {
         T f;
-        callable_dervied(T functor) : f(functor) {}
+        callable_derived(T functor) : f(functor) {}
         Ret operator()(Args0 a0) {
             return f(a0);
         }
         struct callable_base *copy() const {
-            return new callable_dervied< T >(f);
+            return new callable_derived< T >(f);
         }
     };
 
 public:
     template < typename T >
-    Function(T functor) : base(new callable_dervied< T >(functor)) {}
+    Function(T functor) : base(new callable_derived< T >(functor)) {}
     Function() : base(nullptr) {}
     // 实际调用存储的函数
     Ret operator()(Args0 arg0) {
@@ -62,7 +62,7 @@ public:
         base = f.base->copy();
     }
     Function &operator=(const Function &f) {
-        std::cout << "asign construct" << std::endl;
+        std::cout << "assign construct" << std::endl;
         delete base;
         base = f.base->copy();
         return *this;

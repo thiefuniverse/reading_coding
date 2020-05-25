@@ -93,7 +93,7 @@ public:
 
     Function(const Function &f) : call_func(f.call_func), copy_func(f.copy_func), destruct_func(f.destruct_func), any_callable(copy_func(f)) {}
     Function &operator=(const Function &f) {
-        std::cout << "asign construct" << std::endl;
+        std::cout << "assign construct" << std::endl;
         destruct_func(*this);
         any_callable = copy_func(f);
         return *this;
